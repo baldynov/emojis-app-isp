@@ -1,0 +1,9 @@
+<div class="header">
+  <h1>{{service.title[service.filter]}}</h1>
+  <input #searchBox 
+    id="search-box" 
+    name='search' 
+    placeholder='Поиск'
+    (input)="service.handlerSearch(searchBox.value)">
+</div>
+<app-list></app-list>

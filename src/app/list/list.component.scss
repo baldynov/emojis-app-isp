@@ -1,0 +1,89 @@
+.content {
+    margin: 20px 20px 0 20px;
+    background: #424242;
+    padding: 10px;
+    height: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 50px;
+        border-bottom: 1px solid #fff;
+
+        .column {
+            display: flex;
+            flex-basis: 150px;
+            min-width: 70px;
+            overflow: hidden;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .column--wide {
+            flex: auto;
+        }
+        .column--margin {
+            margin-left: 10px;
+        }
+        .column--action {
+            justify-content: space-between;
+        }
+        .column-button {
+            cursor: pointer;
+        }
+        .column img {
+            height: 25px;
+            width: 25px;
+            margin-left: 15px;
+        }
+        .tooltip {
+            position: absolute;
+            background-color: #5c5c5c;
+            border-radius: 5px;
+            padding: 30px;
+            z-index: 1;
+        }
+        .ico-favorite {
+            height: 25px;
+            width: 25px;
+            background: url('./img/star_border.png') no-repeat center;
+        }
+        .ico-favorite--active {
+            height: 25px;
+            width: 25px;
+            background: url('./img/star.png') no-repeat center;
+        }
+        .ico-delete {
+            height: 25px;
+            width: 25px;
+            margin-left: 24px;
+            background: url('./img/delete.png') no-repeat center;
+        }
+        .ico-restore {
+            height: 25px;
+            width: 25px;
+            margin-left: 24px;
+            background: url('./img/restore.png') no-repeat center;
+        }
+    }
+
+    .list {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+
+        .empty {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .list .row:hover {
+        background: #6b6b6b;
+    }
+}

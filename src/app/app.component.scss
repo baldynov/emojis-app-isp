@@ -1,0 +1,28 @@
+.page {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.2);
+        width: 160px;
+    }
+    nav a {
+        text-decoration: none;
+        padding: 5px 10px;
+        color: #fff;
+    }
+    nav a.active {
+        color: pink;
+        font-weight: 700;
+    }
+    .content {
+        width: 100%;
+        
+        .app-main {
+            width: 100%;
+        }
+    }    
+ }

@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 100px;
+
+    h1 {
+        font-weight: 700;
+    }
+    input {
+        height: 30px;
+        background: 0%;
+        border: none;   
+        border-bottom: 1px solid #fff; 
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        outline: none;
+        color: #fff;
+        width: 200px;
+    }
+}
+.app-list {
+    width: 100%;
+}
